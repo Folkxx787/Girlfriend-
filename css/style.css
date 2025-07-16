@@ -1,0 +1,64 @@
+body {
+  font-family: 'Segoe UI',Tahoma,Geneva,Vernada,sans-serif ;
+  background-color: #fcc4ec ;
+  color : #4a148c ;
+  margin: 0 ;
+  padding : 20px ;
+  display : flex ;
+  flex-direction: column ;
+  justify-content: center ;
+  align-items: center ;
+  min-height: 100vh ;
+  text-align: center ;
+}
+h1{
+  color : #880e4f ;
+  margin-bottom: 15px;
+  font-size: 1.5em ;
+}
+p {
+  font-size: 1.5em ;
+  margin-bottom: 30px ;
+}
+.hidden {
+  display: none ;
+  
+}
+#gf {
+  max-width: 90%; /* จำกัดขนาดรูปภาพไม่ให้ใหญ่เกินไป */
+    height: auto; /* รักษาสัดส่วน */
+    border: 8px solid #ff80ab; /* กรอบรูปสีชมพูสด */
+    border-radius: 20px; /* มุมโค้งมน */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* เงาที่ชัดเจนขึ้น */
+    margin-top: 40px; /* ระยะห่างจากปุ่ม */
+    animation: fadeIn 1s ease-out forwards;
+}
+@keyframes fadeIn {
+  from {opacity: 0;transform: scale(0.8);}
+  to {opacity: 1;transform: scale(1);}
+}
+#bt {
+  background-color: #ff4081; /* สีชมพูร้อนแรง */
+    color: white;
+    padding: 18px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 60px; /* ปุ่มกลมๆ */
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    letter-spacing: 1px;
+}
+#bt:hover {
+  background-color: #e03070 ;
+  transform: translate(-5px) ;
+  box-shadow: 0 12px 20px rgba(0,0,0,0.2) ;
+  
+}
+#bt:active{
+  background-color: #c02060 ;
+  transform: translateY(0) ;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3) ;
+  }
+  
